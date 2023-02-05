@@ -29,6 +29,6 @@ function tarotSpread(name){
 }
 
 // test function of tarot Spread, can I add the meaning of cards.
-tarotSpread('Claritza')
+tarotSpread('Sam')
 //console.log(tarotDeck.tarotMajor[generateRandomNumber(tarotDeck.tarotMajor.length)])
 //console.log(tarotDeck.tarotMinor[generateRandomNumber(tarotDeck.tarotMinor.length)] + " of " + tarotDeck.tarotMinorType[generateRandomNumber(tarotDeck.tarotMinorType.length)])
