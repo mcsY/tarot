@@ -26,12 +26,16 @@ function tarotSpread(name){
     let present = pickRandomTarot()
    
     let future = pickRandomTarot()
-     if(present == past || present == future ){
+    while (present === past || present === future) {
+        console.log("hello")
         present = pickRandomTarot()
-     }
-     if(future == past || future == present){
+    }
+    
+    while (future === past || future === present) {
+        console.log('hi')
         future = pickRandomTarot()
-     }
+    }
+    
     console.log('Hello ' + name + ', here is your Past, Present and Future reading:')
     console.log('Past: ' + past)
     console.log('Present: ' + present)
