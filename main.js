@@ -22,10 +22,20 @@ function pickRandomTarot(){
 }
 // the Tarot spread, I need to rethink that a card can only be pick once. 
 function tarotSpread(name){
+    let past = pickRandomTarot()
+    let present = pickRandomTarot()
+   
+    let future = pickRandomTarot()
+     if(present == past || present == future ){
+        present = pickRandomTarot()
+     }
+     if(future == past || future == present){
+        future = pickRandomTarot()
+     }
     console.log('Hello ' + name + ', here is your Past, Present and Future reading:')
-    console.log('Past: ' + pickRandomTarot())
-    console.log('Present: ' + pickRandomTarot())
-    console.log('Future: ' + pickRandomTarot())
+    console.log('Past: ' + past)
+    console.log('Present: ' + present)
+    console.log('Future: ' + future)
 }
 
 // test function of tarot Spread, can I add the meaning of cards.
